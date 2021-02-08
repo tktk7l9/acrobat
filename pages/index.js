@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import Link from 'next/link'
+import Date from '../components/date'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import { getSortedGymsData } from '../lib/gyms'
@@ -30,11 +32,13 @@ export default function Home({ allGymsData }) {
         <ul className={utilStyles.list}>
           {allGymsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
-              {title}
+              <Link href="/gyms/[id]" as={`/gyms/${id}`}>
+                <a>{title}</a>
+              </Link>
               <br />
-              {id}
-              <br />
-              {date}
+              <small className={utilStyles.lightText}>
+                <Date dateString={date} />
+              </small>
             </li>
           ))}
         </ul>
