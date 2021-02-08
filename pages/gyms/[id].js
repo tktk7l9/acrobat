@@ -12,8 +12,14 @@ export default function Gyms({ gymData }) {
             </Head>
             <article>
                 <h1 className={utilStyles.headingXl}>{gymData.title}</h1>
+                <h2>{gymData.branch}</h2>
+                <p>{gymData.address}</p>
                 <div className={utilStyles.lightText}>
                     <Date dateString={gymData.date} />
+                </div>
+                <br />
+                <div>
+                    {gymData.content}
                 </div>
                 <div dangerouslySetInnerHTML={{ __html: gymData.contentHtml }} />
             </article>
