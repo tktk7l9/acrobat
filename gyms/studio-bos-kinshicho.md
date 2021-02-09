@@ -4,6 +4,7 @@ branch: "錦糸町店"
 date: "2020-01-02"
 content: "スタジオBOS 錦糸町 | 本格アクションスクール多数開講中！！アクションスタジオ錦糸町にオープン!!!"
 address: "東京都墨田区江東橋5-7-22 平澤ビル1階"
+siteUrl: "http://studio-bos-kinshicho.com/"
 ---
 
 ---

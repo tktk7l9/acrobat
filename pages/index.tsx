@@ -1,10 +1,11 @@
+import { GetStaticProps } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import { getSortedGymsData } from '../lib/gyms'
 
-export async function getStaticProps() {
+export const getStaticProps: GetStaticProps = async() => {
   const allGymsData = getSortedGymsData()
   return {
     props: {
@@ -13,7 +14,20 @@ export async function getStaticProps() {
   }
 }
 
-export default function Home({ allGymsData }) {
+type Props = {
+  allGymsData: {
+    id: string
+    title: string
+    branch: string
+    address: string
+  }[]
+}
+
+export default function Home({
+  allGymsData
+}:
+  Props
+) {
   return (
     <Layout home>
       <Head>

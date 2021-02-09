@@ -23,7 +23,7 @@ export function getSortedGymsData() {
     // Combine the data with the id
     return {
       id,
-      ...matterResult.data
+      ...(matterResult.data as { date: string; title: string })
     }
   })
   // Sort gyms by date
@@ -39,31 +39,16 @@ export function getSortedGymsData() {
 export function getAllGymIds() {
   const fileNames = fs.readdirSync(gymsDirectory)
 
-  // Returns an array that looks like this:
-  // [
-  //  {
-  //    params: {
-  //      id: 'ssg-ssr'
-  //    }
-  //   },
-  //   {
-  //      params: {
-  //        id: 'pre-rendering'
-  //      }
-  //    }
-  //  }
-  // ]
   return fileNames.map(fileName => {
     return {
       params: {
         id: fileName.replace(/\.md$/, '')
-        // id: ["acrobat-gym-white", "ogikubo"]
       }
     }
   })
 }
 
-export async function getGymsData(id) {
+export async function getGymsData(id: string) {
   const fullPath = path.join(gymsDirectory, `${id}.md`)
   const fileContents = fs.readFileSync(fullPath, 'utf-8')
 
@@ -80,6 +65,6 @@ export async function getGymsData(id) {
   return {
     id,
     contentHtml,
-    ...matterResult.data
+    ...(matterResult.data as { date: string; title: string })
   }
 }

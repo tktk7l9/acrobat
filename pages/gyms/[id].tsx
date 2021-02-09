@@ -3,8 +3,20 @@ import Layout from '../../components/layout'
 import { getAllGymIds, getGymsData } from '../../lib/gyms'
 import Date from '../../components/date'
 import utilStyles from '../../styles/utils.module.css'
+import { GetStaticProps, GetStaticPaths } from 'next'
 
-export default function Gyms({ gymData }) {
+export default function Gyms({
+    gymData
+}: {
+        gymData: {
+        title: string
+        branch: string
+        content: string
+        address: string
+        siteUrl: string
+        contentHtml: string
+    }
+}) {
     return (
         <Layout>
             <Head>
@@ -13,11 +25,12 @@ export default function Gyms({ gymData }) {
             <article>
                 <h1 className={utilStyles.headingXl}>{gymData.title}</h1>
                 <h2>{gymData.branch}</h2>
-                <p>{gymData.address}</p>
-                <div className={utilStyles.lightText}>
-                    <Date dateString={gymData.date} />
-                </div>
-                <br />
+                <a
+                    href={gymData.siteUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >{gymData.siteUrl}</a>
+                <p className={utilStyles.lightText}>{gymData.address}</p>
                 <div>
                     {gymData.content}
                 </div>
@@ -27,7 +40,7 @@ export default function Gyms({ gymData }) {
     )
 }
 
-export async function getStaticPaths() {
+export const getStaticPaths: GetStaticPaths = async () => {
     const paths = getAllGymIds()
     return {
         paths,
@@ -35,8 +48,8 @@ export async function getStaticPaths() {
     }
 }
 
-export async function getStaticProps({ params }) {
-    const gymData = await getGymsData(params.id)
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+    const gymData = await getGymsData(params.id as string)
     return {
         props: {
             gymData
