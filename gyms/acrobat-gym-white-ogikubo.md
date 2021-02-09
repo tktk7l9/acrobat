@@ -9,7 +9,7 @@ content: "2020年春にニューオープン！タンブリングフロア、ク
 店内は自動販売機も設置しております。そのほか、プライベートレッスンや派遣レッスン、施設レンタルも行っておりますので、お気軽にお問い合わせください。"
 address: "東京都杉並区 清水3-16-7 井口ビルB1F"
 siteUrl: "https://acrowhite.com/locations/ogikubo"
-environments: ["タンブリング"]
+environment: "タンブリング"
 ---
 
 ---

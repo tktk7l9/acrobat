@@ -14,7 +14,7 @@ export default function Gyms({
         content: string
         address: string
         siteUrl: string
-        environments: string[]
+        environment: string
         contentHtml: string
     }
 }) {
@@ -36,7 +36,7 @@ export default function Gyms({
                     {gymData.content}
                 </div>
                 <div>
-                    {gymData.environments}
+                    {gymData.environment}
                 </div>
                 <div dangerouslySetInnerHTML={{ __html: gymData.contentHtml }} />
             </article>

@@ -9,7 +9,7 @@ content: "錦糸町駅（JR総武線・地下鉄半蔵門線）から徒歩7分�
 店内は自動販売機も設置しております。そのほか、プライベートレッスンや派遣レッスン、施設レンタルも行っておりますので、お気軽にお問い合わせください。"
 address: "東京都墨田区亀沢4-16-10 加藤鉄鋼倉庫"
 siteUrl: "https://acrowhite.com/locations/kinshicho"
-environments: ["エアマット"]
+environment: "エアマット"
 ---
 
 ---
