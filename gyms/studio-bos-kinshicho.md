@@ -8,7 +8,7 @@ siteUrl: "http://studio-bos-kinshicho.com/"
 ---
 
 ---
-## 個人解放
+### 個人解放
 - 火曜日 
     - 19:30 ~ 21:00 1部
     - 21:00 ~ 23:00 2部
@@ -20,5 +20,5 @@ siteUrl: "http://studio-bos-kinshicho.com/"
     - 21:00 ~ 23:00 2部
 
 ---
-## 料金
+### 料金
 - 1,000円
