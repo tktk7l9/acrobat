@@ -14,6 +14,7 @@ export default function Gyms({
         content: string
         address: string
         siteUrl: string
+        environments: string[]
         contentHtml: string
     }
 }) {
@@ -33,6 +34,9 @@ export default function Gyms({
                 <p className={utilStyles.lightText}>{gymData.address}</p>
                 <div>
                     {gymData.content}
+                </div>
+                <div>
+                    {gymData.environments}
                 </div>
                 <div dangerouslySetInnerHTML={{ __html: gymData.contentHtml }} />
             </article>
