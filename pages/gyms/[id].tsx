@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Layout from '../../components/layout'
+import Map from '../../components/map'
 import { getAllGymIds, getGymsData } from '../../lib/gyms'
-import Date from '../../components/date'
 import utilStyles from '../../styles/utils.module.css'
 import { GetStaticProps, GetStaticPaths } from 'next'
 
@@ -13,6 +13,10 @@ export default function Gyms({
         branch: string
         content: string
         address: string
+        building: string
+        floor: string
+        lat: string
+        lng: string
         siteUrl: string
         environment: string
         contentHtml: string
@@ -31,7 +35,7 @@ export default function Gyms({
                     target="_blank"
                     rel="noopener noreferrer"
                 >{gymData.siteUrl}</a>
-                <p className={utilStyles.lightText}>{gymData.address}</p>
+                <p className={utilStyles.lightText}>{gymData.address} {gymData.building}{gymData.floor}</p>
                 <div>
                     {gymData.content}
                 </div>
@@ -39,6 +43,7 @@ export default function Gyms({
                     {gymData.environment}
                 </div>
                 <div dangerouslySetInnerHTML={{ __html: gymData.contentHtml }} />
+                <Map targetLat={gymData.lat} targetLng={gymData.lng} />
             </article>
         </Layout>
     )

@@ -20,6 +20,8 @@ type Props = {
     title: string
     branch: string
     address: string
+    building: string
+    floor: string
     environment: string
   }[]
 }
@@ -40,7 +42,7 @@ export default function Home({
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.HeadingLg}>Gyms</h2>
         <ul className={utilStyles.list}>
-          {allGymsData.map(({ id, address, title, branch, environment }) => (
+          {allGymsData.map(({ id, address, building, floor, title, branch, environment }) => (
             <li className={utilStyles.listItem} key={id}>
               <Link href="/gyms/[id]" as={`/gyms/${id}`}>
                 <a>{title} {branch}</a>
@@ -48,7 +50,7 @@ export default function Home({
               <br />
               <small className={utilStyles.lightText}>
                 {/* <Date dateString={date} /> */}
-                {address}
+                {address} {building}{floor}
                 <br />
                 {environment}
               </small>
