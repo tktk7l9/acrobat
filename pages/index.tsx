@@ -1,7 +1,7 @@
 import { GetStaticProps } from 'next'
 import Head from 'next/head'
-import Link from 'next/link'
 import Layout, { siteTitle } from '../components/layout'
+import Card from '../components/card'
 import utilStyles from '../styles/utils.module.css'
 import { getSortedGymsData } from '../lib/gyms'
 
@@ -41,22 +41,7 @@ export default function Home({
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.HeadingLg}>Gyms</h2>
-        <ul className={utilStyles.list}>
-          {allGymsData.map(({ id, address, building, floor, title, branch, environment }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href="/gyms/[id]" as={`/gyms/${id}`}>
-                <a>{title} {branch}</a>
-              </Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                {/* <Date dateString={date} /> */}
-                {address} {building}{floor}
-                <br />
-                {environment}
-              </small>
-            </li>
-          ))}
-        </ul>
+        <Card allGymsData={allGymsData}/>
       </section>
     </Layout>
   )
