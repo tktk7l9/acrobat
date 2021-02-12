@@ -36,11 +36,14 @@ export default function Home({
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
+      {/* <section className={utilStyles.headingMd}> */}
+      <section className="text-base">
         <p>アクロバットを練習できる場所を見つけるサイトです。</p>
       </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.HeadingLg}>Gyms</h2>
+      {/* <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}> */}
+      <section className="text-base pt-px">
+        {/* <h2 className={utilStyles.HeadingLg}>Gyms</h2> */}
+        <h2 className="text-sm">Gyms</h2>
         <Card allGymsData={allGymsData}/>
       </section>
     </Layout>
