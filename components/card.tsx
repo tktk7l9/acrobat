@@ -16,9 +16,9 @@ export default function Card({ allGymsData }: { allGymsData: any }) {
     <>
         <ul className="list-none p-0 m-0">
         {allGymsData.map(({ id, address, building, floor, title, branch, environment }) => (
-            <li className="mt-0 mx-0 mb-5" key={id}>
+            <li className="text-blue-500 mt-0 mx-0 mb-5" key={id}>
                 <Link href="/gyms/[id]" as={`/gyms/${id}`}>
-                <a>{title} {branch}</a>
+                <a className="hover:underline">{title} {branch}</a>
                 </Link>
                 <br />
                 <small className="text-gray-500">

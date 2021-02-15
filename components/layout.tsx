@@ -31,11 +31,11 @@ export default function Layout({
       <header className="flex flex-col items-center">
         {home ? (
           <>
-            <h1 className="text-4xl font-extrabold tracking-tighter my-4 mx-0">{name}</h1>
+            <h1 className="text-5xl font-extrabold tracking-tighter my-4 mx-0">{name}</h1>
           </>
         ) : (
           <>
-            <h2 className="text-sm">
+            <h2 className="text-2xl">
               <Link href="/">
                 <a className="text-blue-500">{name}</a>
               </Link>
@@ -45,7 +45,7 @@ export default function Layout({
       </header>
       <main>{children}</main>
       {!home && (
-        <div className="mt-12 mx-0 mb-0">
+        <div className="text-blue-500 mt-12 mx-0 mb-0">
           <Link href="/">
             <a>← Back to home</a>
           </Link>

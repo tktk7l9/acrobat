@@ -35,11 +35,11 @@ export default function Home({
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className="text-base">
+      <section className="text-xl">
         <p>アクロバットを練習できる場所を見つけるサイトです。</p>
       </section>
-      <section className="text-base pt-px">
-        <h2 className="text-sm my-4 mx-0">Gyms</h2>
+      <section className="text-xl pt-px">
+        <h2 className="text-2xl my-4 mx-0">Gyms</h2>
         <Card allGymsData={allGymsData}/>
       </section>
     </Layout>
