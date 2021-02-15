@@ -2,7 +2,6 @@ import { GetStaticProps } from 'next'
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import Card from '../components/card'
-import utilStyles from '../styles/utils.module.css'
 import { getSortedGymsData } from '../lib/gyms'
 
 export const getStaticProps: GetStaticProps = async() => {
@@ -36,14 +35,11 @@ export default function Home({
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      {/* <section className={utilStyles.headingMd}> */}
       <section className="text-base">
         <p>アクロバットを練習できる場所を見つけるサイトです。</p>
       </section>
-      {/* <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}> */}
       <section className="text-base pt-px">
-        {/* <h2 className={utilStyles.HeadingLg}>Gyms</h2> */}
-        <h2 className="text-sm">Gyms</h2>
+        <h2 className="text-sm my-4 mx-0">Gyms</h2>
         <Card allGymsData={allGymsData}/>
       </section>
     </Layout>

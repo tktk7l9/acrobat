@@ -1,6 +1,4 @@
 import Head from 'next/head'
-import styles from './layout.module.css'
-import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
 const name = 'Acrobat Portal'
@@ -14,7 +12,7 @@ export default function Layout({
     home?: boolean
 }) {
   return (
-    <div className={styles.container}>
+    <div className="max-w-xl py-0 px-4 mt-12 mx-auto mb-24">
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -30,16 +28,16 @@ export default function Layout({
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className={styles.header}>
+      <header className="flex flex-col items-center">
         {home ? (
           <>
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <h1 className="text-4xl font-extrabold tracking-tighter my-4 mx-0">{name}</h1>
           </>
         ) : (
           <>
-            <h2 className={utilStyles.headingLg}>
+            <h2 className="text-sm">
               <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
+                <a className="text-blue-500">{name}</a>
               </Link>
             </h2>
           </>
@@ -47,7 +45,7 @@ export default function Layout({
       </header>
       <main>{children}</main>
       {!home && (
-        <div className={styles.backToHome}>
+        <div className="mt-12 mx-0 mb-0">
           <Link href="/">
             <a>← Back to home</a>
           </Link>

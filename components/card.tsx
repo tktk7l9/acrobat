@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import utilStyles from '../styles/utils.module.css'
 
 export default function Card({ allGymsData }: { allGymsData: any }) {
 
@@ -15,14 +14,14 @@ export default function Card({ allGymsData }: { allGymsData: any }) {
 
   return (
     <>
-        <ul className={utilStyles.list}>
+        <ul className="list-none p-0 m-0">
         {allGymsData.map(({ id, address, building, floor, title, branch, environment }) => (
-            <li className={utilStyles.listItem} key={id}>
+            <li className="mt-0 mx-0 mb-5" key={id}>
                 <Link href="/gyms/[id]" as={`/gyms/${id}`}>
                 <a>{title} {branch}</a>
                 </Link>
                 <br />
-                <small className={utilStyles.lightText}>
+                <small className="text-gray-500">
                 {address} {building}{floor}
                 <br />
                 {environment}
