@@ -21,7 +21,7 @@ type Props = {
     address: string
     building: string
     floor: string
-    environment: string
+    tags: string
   }[]
 }
 

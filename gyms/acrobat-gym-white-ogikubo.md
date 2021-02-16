@@ -13,7 +13,7 @@ floor: "B1F"
 lat: "35.71729300524003"
 lng: "139.6145574845155"
 siteUrl: "https://acrowhite.com/locations/ogikubo"
-environment: "タンブリング"
+tags: ["エアマット","鏡","予約不要"]
 ---
 
 ---

@@ -13,7 +13,7 @@ floor: ""
 lat: "35.698757152703536"
 lng: "139.8073884248046"
 siteUrl: "https://acrowhite.com/locations/kinshicho"
-environment: "エアマット"
+tags: ["エアマット","予約不要"]
 ---
 
 ---

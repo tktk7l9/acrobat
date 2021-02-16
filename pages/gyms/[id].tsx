@@ -17,7 +17,7 @@ export default function Gyms({
         lat: string
         lng: string
         siteUrl: string
-        environment: string
+        tags: string[]
         contentHtml: string
     }
 }) {
@@ -39,8 +39,13 @@ export default function Gyms({
                 <div className="text-lg">
                     {gymData.content}
                 </div>
-                <div className="text-lg my-4">
-                    {gymData.environment}
+                <div>
+                    {gymData.tags.map((tag) => (
+                    <span className="text-xm inline-block  px-2 uppercase rounded text-white bg-green-400 uppercase last:mr-0 mr-1 mt-4"
+                    >
+                        {tag}
+                    </span>
+                    ))}
                 </div>
                 <div
                     dangerouslySetInnerHTML={{ __html: gymData.contentHtml }}
@@ -48,6 +53,7 @@ export default function Gyms({
                 />
                 <Map targetLat={gymData.lat} targetLng={gymData.lng} />
             </article>
+            )}
         </Layout>
     )
 }
