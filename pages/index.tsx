@@ -21,7 +21,7 @@ type Props = {
     address: string
     building: string
     floor: string
-    tags: string
+    tags: string[]
   }[]
 }
 
@@ -35,11 +35,12 @@ export default function Home({
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className="text-xl">
-        <p>アクロバットを練習できる場所を見つけるサイトです。</p>
+      <section className="text-center text-xl pb-5">
+        <p>
+          アクロバットを練習できる場所を見つけるサイトです。
+        </p>
       </section>
       <section className="text-xl pt-px">
-        <h2 className="text-2xl my-4 mx-0">Gyms</h2>
         <Card allGymsData={allGymsData}/>
       </section>
     </Layout>

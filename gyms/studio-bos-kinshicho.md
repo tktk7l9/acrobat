@@ -11,6 +11,7 @@ lat: "35.69145324894506"
 lng: "139.8110528421847"
 siteUrl: "http://studio-bos-kinshicho.com/"
 tags: ["タンブリング","鏡","予約制"]
+siteImage: "http://studio-bos-kinshicho.com/wp-content/uploads/2018/09/k_rentalstudio_banner.png"
 ---
 
 ---

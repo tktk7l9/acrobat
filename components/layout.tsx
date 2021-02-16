@@ -12,7 +12,7 @@ export default function Layout({
     home?: boolean
 }) {
   return (
-    <div className="max-w-xl py-0 px-4 mt-12 mx-auto mb-24">
+    <div className="py-0 px-4 mt-12 mx-auto mb-24">
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -37,7 +37,7 @@ export default function Layout({
           <>
             <h2 className="text-2xl">
               <Link href="/">
-                <a className="text-blue-500">{name}</a>
+                <a className="">{name}</a>
               </Link>
             </h2>
           </>
@@ -45,7 +45,7 @@ export default function Layout({
       </header>
       <main>{children}</main>
       {!home && (
-        <div className="text-blue-500 mt-12 mx-0 mb-0">
+        <div className="text-center mr-96 text-blue-500 mt-12 mx-0 mb-0">
           <Link href="/">
             <a>← Back to home</a>
           </Link>

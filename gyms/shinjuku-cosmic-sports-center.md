@@ -10,6 +10,7 @@ lat: "35.705171171961474"
 lng: "139.70810884034066"
 siteUrl: "https://www.regasu-shinjuku.or.jp/?p=158893"
 tags: ["畳","予約不要"]
+siteImage: "https://www.regasu-shinjuku.or.jp/regasu/wp-content/uploads/2010/12/photo-cos-1budou.jpg"
 ---
 
 ---
