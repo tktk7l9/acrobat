@@ -15,7 +15,7 @@ export default function Card({ allGymsData }: { allGymsData: any }) {
 
   return (
     <>
-      <ul className="grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-6 list-none p-0 mx-10">
+      <ul className="grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-6 list-none p-0 xl:mx-10 md:mx-3 sm:mx-1">
         {allGymsData.map(({ id, address, building, floor, name, branch, tags, siteImage }) => (
         <Link href="/gyms/[id]" as={`/gyms/${id}`}>
           <div className="rounded overflow-hidden shadow-lg my-2 hover:bg-gray-100">
