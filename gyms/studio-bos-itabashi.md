@@ -12,14 +12,18 @@ floor: "1F"
 lat: "35.76900353034553"
 lng: "139.67042146917706"
 snsLink: [
-  "http://www.studio-bos.com/"
+  "http://www.studio-bos.com",
+  "https://twitter.com/STUDIO_BOS",
+  "https://www.instagram.com/studio_bos_itabashi",
+  "https://www.youtube.com/channel/UCeR3JoFXExftRNClYDVcD9w"
+
 ]
 tags: [
   "タンブリング",
   "鏡",
   "予約制"
 ]
-siteImage: "http://studio-bos-kinshicho.com/wp-content/uploads/2020/04/au_banner_bos_studio_i.png"
+siteImage: "https://pbs.twimg.com/profile_banners/244014870/1447304628"
 ---
 
 ---

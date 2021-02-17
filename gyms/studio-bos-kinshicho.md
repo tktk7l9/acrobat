@@ -10,14 +10,17 @@ floor: "1階"
 lat: "35.69145324894506"
 lng: "139.8110528421847"
 snsLink: [
-  "http://studio-bos-kinshicho.com/"
+  "http://studio-bos-kinshicho.com",
+  "https://twitter.com/STUDIO_BOS_K",
+  "https://www.instagram.com/studio_bos_kinshicho",
+  "https://www.youtube.com/channel/UCxak_ZWKVyOloS5lnPU7yEg"
 ]
 tags: [
   "タンブリング",
   "鏡",
   "予約制"
 ]
-siteImage: "http://studio-bos-kinshicho.com/wp-content/uploads/2018/09/k_rentalstudio_banner.png"
+siteImage: "https://pbs.twimg.com/profile_banners/1008532646320672769/1529288722"
 ---
 
 ---

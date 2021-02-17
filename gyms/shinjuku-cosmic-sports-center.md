@@ -9,7 +9,10 @@ floor: "1階"
 lat: "35.705171171961474"
 lng: "139.70810884034066"
 snsLink: [
-    "https://www.regasu-shinjuku.or.jp/?p=158893"
+    "https://www.regasu-shinjuku.or.jp/?p=158893",
+    "",
+    "",
+    ""
 ]
 tags: [
     "畳", 

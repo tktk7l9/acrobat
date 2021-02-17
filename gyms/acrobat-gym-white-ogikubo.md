@@ -13,14 +13,17 @@ floor: "B1F"
 lat: "35.71729300524003"
 lng: "139.6145574845155"
 snsLink: [
-  "https://acrowhite.com/locations/ogikubo/"
+  "https://acrowhite.com/locations/ogikubo",
+  "https://twitter.com/acrowhite2",
+  "https://www.instagram.com/acrowhite3",
+  ""
 ]
 tags: [
   "エアマット",
   "鏡",
   "予約不要"
 ]
-siteImage: "https://acrowhite.com/wpw/wp-content/uploads/2020/04/224e5914962b0d7f90ee72c3143bebf6-scaled.jpg"
+siteImage: "https://pbs.twimg.com/profile_banners/1243704319909584896/1608722667"
 ---
 
 ---

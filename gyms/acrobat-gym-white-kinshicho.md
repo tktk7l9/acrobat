@@ -13,13 +13,16 @@ floor: ""
 lat: "35.698757152703536"
 lng: "139.8073884248046"
 snsLink: [
-    "https://acrowhite.com/locations/kinshicho/"
+    "https://acrowhite.com/locations/kinshicho",
+    "https://twitter.com/acrowhite1",
+    "https://www.instagram.com/acrowhite",
+    "https://www.youtube.com/channel/UCvaHCRB1WIepLthada1wksA/featured"
 ]
 tags: [
     "エアマット",
     "予約不要"
 ]
-siteImage: "https://acrowhite.com/wpw/wp-content/uploads/2020/03/200315-0007-scaled.jpg"
+siteImage: "https://pbs.twimg.com/profile_banners/769203584604868608/1611144617"
 ---
 
 ---

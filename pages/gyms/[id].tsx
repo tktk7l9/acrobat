@@ -32,14 +32,20 @@ export default function Gyms({
                         className="text-3xl font-extrabold tracking-tighter my-4 mx-0">
                         {gymData.name}  {gymData.branch}
                     </h1>
-                    <a
-                        href={gymData.snsLink[0]}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-blue-500 text-xl"
-                    >
-                        {gymData.snsLink[0]}
-                    </a>
+                    <div>
+                        {gymData.snsLink.map((sns) => (
+                        <div>
+                            <a
+                                href={sns}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-blue-500 text-xl"
+                            >
+                               {sns}
+                            </a>
+                        </div>
+                        ))}
+                    </div>
                     <p
                         className="text-gray-500 text-xl my-4"
                     >
