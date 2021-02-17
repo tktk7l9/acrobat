@@ -23,7 +23,7 @@ export function getSortedGymsData() {
     // Combine the data with the id
     return {
       id,
-      ...(matterResult.data as { date: string; title: string })
+      ...(matterResult.data as { date: string; name: string })
     }
   })
   // Sort gyms by date
@@ -65,6 +65,6 @@ export async function getGymsData(id: string) {
   return {
     id,
     contentHtml,
-    ...(matterResult.data as { date: string; title: string })
+    ...(matterResult.data as { date: string; name: string })
   }
 }

@@ -1,16 +1,22 @@
 ---
-title: "スタジオBOS"
+name: "スタジオBOS"
 branch: "錦糸町店"
-date: "2020-01-02"
 content: "スタジオBOSでは、個人開放時間を設けております！
 新宿スポーツセンター、豊島体育館、中野体育館のように、一般に開放しているシステムと同じです。もっと少人数の場所でじっくり練習したい方、 各体育館の開放時間や曜日にスケジュールが合わない方、 タンブリングバーンで練習してみたい方など是非ご利用下さい。"
+area: "東京"
 address: "東京都墨田区江東橋5-7-22"
 building: "平澤ビル"
 floor: "1階"
 lat: "35.69145324894506"
 lng: "139.8110528421847"
-siteUrl: "http://studio-bos-kinshicho.com/"
-tags: ["タンブリング","鏡","予約制"]
+snsLink: [
+  "http://studio-bos-kinshicho.com/"
+]
+tags: [
+  "タンブリング",
+  "鏡",
+  "予約制"
+]
 siteImage: "http://studio-bos-kinshicho.com/wp-content/uploads/2018/09/k_rentalstudio_banner.png"
 ---
 

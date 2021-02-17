@@ -4,7 +4,7 @@ export default function Card({ allGymsData }: { allGymsData: any }) {
 
     type allGymsData = {
         id: string
-        title: string
+        name: string
         branch: string
         address: string
         building: string
@@ -16,13 +16,17 @@ export default function Card({ allGymsData }: { allGymsData: any }) {
   return (
     <>
       <ul className="grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-6 list-none p-0 mx-10">
-        {allGymsData.map(({ id, address, building, floor, title, branch, tags, siteImage }) => (
+        {allGymsData.map(({ id, address, building, floor, name, branch, tags, siteImage }) => (
         <Link href="/gyms/[id]" as={`/gyms/${id}`}>
           <div className="rounded overflow-hidden shadow-lg my-2 hover:bg-gray-100">
-            <img className="w-full h-52" src={siteImage} alt={title} />
+              <img
+                className="w-full h-52"
+                src={siteImage}
+                alt={name}
+              />
             <div className="px-6 py-4">
                   <div className="font-bold text-base mb-1">
-                    {title} {branch}
+                    {name} {branch}
                   </div>
                   <small className="text-gray-500">
                   {address} {building}{floor}

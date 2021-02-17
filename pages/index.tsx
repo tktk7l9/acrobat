@@ -16,7 +16,7 @@ export const getStaticProps: GetStaticProps = async() => {
 type Props = {
   allGymsData: {
     id: string
-    title: string
+    name: string
     branch: string
     address: string
     building: string
@@ -35,13 +35,19 @@ export default function Home({
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className="text-center text-xl pb-5">
+      <section
+        className="text-center text-xl pb-5"
+      >
         <p>
           アクロバットを練習できる場所を見つけるサイトです。
         </p>
       </section>
-      <section className="text-xl pt-px">
-        <Card allGymsData={allGymsData}/>
+      <section
+        className="text-xl pt-px"
+      >
+        <Card
+          allGymsData={allGymsData}
+        />
       </section>
     </Layout>
   )

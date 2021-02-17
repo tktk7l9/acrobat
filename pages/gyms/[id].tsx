@@ -8,7 +8,7 @@ export default function Gyms({
     gymData
 }: {
         gymData: {
-        title: string
+        name: string
         branch: string
         content: string
         address: string
@@ -16,7 +16,7 @@ export default function Gyms({
         floor: string
         lat: string
         lng: string
-        siteUrl: string
+        snsLink: string[]
         tags: string[]
         contentHtml: string
     }
@@ -25,30 +25,36 @@ export default function Gyms({
         <Layout>
             <div className="max-w-2xl mx-auto">
                 <Head>
-                    <title>{gymData.title}</title>
+                    <title>{gymData.name}</title>
                 </Head>
                 <article>
-                    <h1 className="text-3xl font-extrabold tracking-tighter my-4 mx-0">
-                        {gymData.title}  {gymData.branch}
+                    <h1
+                        className="text-3xl font-extrabold tracking-tighter my-4 mx-0">
+                        {gymData.name}  {gymData.branch}
                     </h1>
                     <a
-                        href={gymData.siteUrl}
+                        href={gymData.snsLink[0]}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-blue-500 text-xl"
                     >
-                        {gymData.siteUrl}
+                        {gymData.snsLink[0]}
                     </a>
-                    <p className="text-gray-500 text-xl my-4">
+                    <p
+                        className="text-gray-500 text-xl my-4"
+                    >
                         {gymData.address} {gymData.building}{gymData.floor}
                     </p>
-                    <div className="text-lg">
+                    <div
+                        className="text-lg"
+                    >
                         {gymData.content}
                     </div>
                     <div>
                         {gymData.tags.map((tag) => (
-                        <span className="text-xm inline-block  px-2 uppercase rounded text-white bg-green-400 uppercase last:mr-0 mr-1 mt-4"
-                        >
+                            <span
+                                className="text-xm inline-block  px-2 uppercase rounded text-white bg-green-400 uppercase last:mr-0 mr-1 mt-4"
+                            >
                             {tag}
                         </span>
                         ))}
@@ -57,7 +63,9 @@ export default function Gyms({
                         dangerouslySetInnerHTML={{ __html: gymData.contentHtml }}
                         className="text-lg my-4"
                     />
-                    <Map targetLat={gymData.lat} targetLng={gymData.lng} />
+                    <Map
+                        targetLat={gymData.lat} targetLng={gymData.lng}
+                    />
                 </article>
             </div>
         </Layout>
