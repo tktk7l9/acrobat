@@ -1,8 +1,7 @@
 import Head from 'next/head'
 import Layout from '../../components/layout'
-import Map from '../../components/map'
 import { getAllGymIds, getGymsData } from '../../lib/gyms'
-import { GetStaticProps, GetStaticPaths } from 'next'
+import { GetStaticPaths } from 'next'
 
 export default function Gyms({
     gymData
@@ -40,6 +39,7 @@ export default function Gyms({
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-blue-500 text-xl"
+                                key={sns}
                             >
                                {sns}
                             </a>
@@ -60,6 +60,7 @@ export default function Gyms({
                         {gymData.tags.map((tag) => (
                             <span
                                 className="text-xm inline-block  px-2 uppercase rounded text-white bg-green-400 uppercase last:mr-0 mr-1 mt-4"
+                                key={tag}
                             >
                             {tag}
                         </span>
@@ -68,9 +69,6 @@ export default function Gyms({
                     <div
                         dangerouslySetInnerHTML={{ __html: gymData.contentHtml }}
                         className="text-lg my-4"
-                    />
-                    <Map
-                        targetLat={gymData.lat} targetLng={gymData.lng}
                     />
                 </article>
             </div>
@@ -86,7 +84,23 @@ export const getStaticPaths: GetStaticPaths = async () => {
     }
 }
 
-export const getStaticProps: GetStaticProps = async ({ params }) => {
+export async function getStaticProps({ params
+}: {
+        params: {
+        id: string
+        name: string
+        branch: string
+        content: string
+        address: string
+        building: string
+        floor: string
+        lat: string
+        lng: string
+        snsLink: string[]
+        tags: string[]
+        contentHtml: string
+    }
+}) {
     const gymData = await getGymsData(params.id as string)
     return {
         props: {
