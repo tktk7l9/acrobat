@@ -55,10 +55,10 @@ export default function Card({ allGymsData }: { allGymsData: any }) {
                   {address} {building}{floor}
                     <br />
                     <div>
-                      {tags.map((tag) => (
+                      {tags.map((tag, i) => (
                         <span
                           className="text-sm  inline-block px-2 uppercase rounded text-white bg-green-400 uppercase last:mr-0 mr-1 mt-1"
-                          key={tag}
+                          key={i}
                             >
                                 {tag}
                             </span>

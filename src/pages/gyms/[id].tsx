@@ -35,14 +35,14 @@ export default function Gyms({
                             {gymData.name}  {gymData.branch}
                         </h1>
                         <div>
-                            {gymData.snsLink.map((sns) => (
+                            {gymData.snsLink.map((sns, i) => (
                             <div>
                                 <a
                                     href={sns}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="text-blue-500 text-xl"
-                                    key={sns}
+                                    key={i}
                                 >
                                 {sns}
                                 </a>
@@ -60,10 +60,10 @@ export default function Gyms({
                             {gymData.content}
                         </div>
                         <div>
-                            {gymData.tags.map((tag) => (
+                            {gymData.tags.map((tag, i) => (
                                 <span
                                     className="text-xm inline-block  px-2 uppercase rounded text-white bg-green-400 uppercase last:mr-0 mr-1 mt-4"
-                                    key={tag}
+                                    key={i}
                                 >
                                 {tag}
                             </span>
