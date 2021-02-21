@@ -4,7 +4,7 @@ import Layout, { siteTitle } from '../components/layout'
 import Card from '../components/card'
 import { getSortedGymsData } from '../lib/gyms'
 import React from 'react'
-import { Footer } from './layouts/Footer'
+import { Footer } from '../components/layouts/Footer'
 
 export const getStaticProps: GetStaticProps = async() => {
   const allGymsData = getSortedGymsData()

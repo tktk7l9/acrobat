@@ -3,7 +3,7 @@ import Layout from '../../components/layout'
 import { getAllGymIds, getGymsData } from '../../lib/gyms'
 import { GetStaticPaths } from 'next'
 import React from 'react'
-import { Footer } from '../layouts/Footer'
+import { Footer } from '../../components/layouts/Footer'
 
 export default function Gyms({
     gymData
