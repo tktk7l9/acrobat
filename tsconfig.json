@@ -16,13 +16,22 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "@*": ["./*"],
+      "components": ["./src/components"],
+      "lib": ["./src/lib"],
+      "types": ["./src/types"],
+      "utils": ["./src/utils"]
+    }
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "pages/api/gym/[pid].ts"  ],
+    "**/*.tsx", 
+    "src/pages/api/gym/[pid].ts"  
+  ],
   "exclude": [
     "node_modules"
   ]
