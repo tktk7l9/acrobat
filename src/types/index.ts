@@ -8,7 +8,10 @@ export type GymsData = {
   lat: string
   lng: string
   content: string
-  snsLink: string[]
+  homePage: string
+  twitter: string
+  instagram: string
+  youtube: string
   tags: string[]
   siteImage: string
   contentHtml: string

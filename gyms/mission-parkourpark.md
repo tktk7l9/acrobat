@@ -8,12 +8,10 @@ building: ""
 floor: ""
 lat: "35.69964335637503"
 lng: "139.87413095703994"
-snsLink: [
-  "http://missionparkourpark.com",
-  "https://twitter.com/missiontyo",
-  "https://www.instagram.com/missiontokyo",
-  "https://www.youtube.com/channel/UCtOCP3ZZHJSV08daugNKt4A/featured"
-]
+homePage: "http://missionparkourpark.com"
+twitter: "https://twitter.com/missiontyo"
+instagram: "https://www.instagram.com/missiontokyo"
+youtube: "https://www.youtube.com/channel/UCtOCP3ZZHJSV08daugNKt4A/featured"
 tags: [
   "タンブリング",
   "トランポリン",

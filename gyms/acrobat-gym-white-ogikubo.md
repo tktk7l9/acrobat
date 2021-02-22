@@ -12,12 +12,10 @@ building: "井口ビル"
 floor: "B1F"
 lat: "35.71729300524003"
 lng: "139.6145574845155"
-snsLink: [
-  "https://acrowhite.com/locations/ogikubo",
-  "https://twitter.com/acrowhite2",
-  "https://www.instagram.com/acrowhite3",
-  ""
-]
+homePage: "https://acrowhite.com/locations/ogikubo"
+twitter: "https://twitter.com/acrowhite2"
+instagram: "https://www.instagram.com/acrowhite3"
+youtube: ""
 tags: [
   "エアマット",
   "鏡",

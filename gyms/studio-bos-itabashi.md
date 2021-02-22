@@ -11,13 +11,10 @@ building: "長野ビル"
 floor: "1F"
 lat: "35.76900353034553"
 lng: "139.67042146917706"
-snsLink: [
-  "http://www.studio-bos.com",
-  "https://twitter.com/STUDIO_BOS",
-  "https://www.instagram.com/studio_bos_itabashi",
-  "https://www.youtube.com/channel/UCeR3JoFXExftRNClYDVcD9w"
-
-]
+homePage: "http://www.studio-bos.com"
+twitter: "https://twitter.com/STUDIO_BOS"
+instagram: "https://www.instagram.com/studio_bos_itabashi"
+youtube: "https://www.youtube.com/channel/UCeR3JoFXExftRNClYDVcD9w"
 tags: [
   "タンブリング",
   "鏡",

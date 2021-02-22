@@ -5,6 +5,7 @@ import { GetStaticPaths } from 'next'
 import React from 'react'
 import { Footer } from '../../components/layouts/Footer'
 import { GymsData } from '@src/types'
+import { HomePageIcon, TwitterIcon, InstagramIcon, YouTubeIcon } from '@src/components/icons'
 
 export default function Gyms({ gymData }: { gymData: GymsData }) {
     return (
@@ -19,21 +20,48 @@ export default function Gyms({ gymData }: { gymData: GymsData }) {
                             className="text-3xl font-extrabold tracking-tighter my-4 mx-0">
                             {gymData.name}  {gymData.branch}
                         </h1>
-                        <div>
-                            {gymData.snsLink.map((sns, i) => (
-                            <div>
+                        <ul className="flex flex-row mt-4 pb-0 space-x-2">
+                            {gymData.homePage ? (
                                 <a
-                                    href={sns}
+                                href={gymData.homePage}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-gray-500 hover:text-yellow-400"
+                                >
+                                    <HomePageIcon />
+                                </a>
+                            ): ( <a /> )}
+                            {gymData.twitter ? (
+                                <a
+                                href={gymData.twitter}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-gray-500 hover:text-blue-400"
+                                >
+                                    <TwitterIcon />
+                                </a>
+                            ): (<a /> )}
+                            {gymData.instagram ? (
+                                <a
+                                    href={gymData.instagram}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-blue-500 text-xl"
-                                    key={i}
+                                    className="text-gray-500 hover:text-purple-400"
                                 >
-                                {sns}
+                                    <InstagramIcon />
                                 </a>
-                            </div>
-                            ))}
-                        </div>
+                            ) : ( <a /> )}
+                            {gymData.youtube ? (
+                                <a
+                                href={gymData.youtube}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-gray-500 hover:text-red-400"
+                                >
+                                    <YouTubeIcon />
+                                </a>   
+                            ) : ( <a /> )}
+                        </ul>
                         <p
                             className="text-gray-500 text-xl my-4"
                         >

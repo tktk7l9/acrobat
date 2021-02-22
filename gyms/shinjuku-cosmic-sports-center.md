@@ -8,12 +8,9 @@ building: "新宿コズミックセンター"
 floor: "1階"
 lat: "35.705171171961474"
 lng: "139.70810884034066"
-snsLink: [
-    "https://www.regasu-shinjuku.or.jp/?p=158893",
-    "",
-    "",
-    ""
-]
+homePage: "https://www.regasu-shinjuku.or.jp/?p=158893"
+twitter: ""
+instagram: ""
 tags: [
     "畳", 
     "予約不要"

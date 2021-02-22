@@ -12,12 +12,10 @@ building: "加藤鉄鋼倉庫"
 floor: ""
 lat: "35.698757152703536"
 lng: "139.8073884248046"
-snsLink: [
-    "https://acrowhite.com/locations/kinshicho",
-    "https://twitter.com/acrowhite1",
-    "https://www.instagram.com/acrowhite",
-    "https://www.youtube.com/channel/UCvaHCRB1WIepLthada1wksA/featured"
-]
+homePage: "https://acrowhite.com/locations/kinshicho"
+twitter: "https://twitter.com/acrowhite1"
+instagram: "https://www.instagram.com/acrowhite"
+youtube: "https://www.youtube.com/channel/UCvaHCRB1WIepLthada1wksA/featured"
 tags: [
     "エアマット",
     "予約不要"

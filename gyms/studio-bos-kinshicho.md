@@ -9,12 +9,10 @@ building: "平澤ビル"
 floor: "1階"
 lat: "35.69145324894506"
 lng: "139.8110528421847"
-snsLink: [
-  "http://studio-bos-kinshicho.com",
-  "https://twitter.com/STUDIO_BOS_K",
-  "https://www.instagram.com/studio_bos_kinshicho",
-  "https://www.youtube.com/channel/UCxak_ZWKVyOloS5lnPU7yEg"
-]
+homePage: "http://studio-bos-kinshicho.com"
+twitter: "https://twitter.com/STUDIO_BOS_K"
+instagram: "https://www.instagram.com/studio_bos_kinshicho"
+youtube: "https://www.youtube.com/channel/UCxak_ZWKVyOloS5lnPU7yEg"
 tags: [
   "タンブリング",
   "鏡",
