@@ -4,24 +4,9 @@ import { getAllGymIds, getGymsData } from '../../lib/gyms'
 import { GetStaticPaths } from 'next'
 import React from 'react'
 import { Footer } from '../../components/layouts/Footer'
+import { GymsData } from '@src/types'
 
-export default function Gyms({
-    gymData
-}: {
-        gymData: {
-        name: string
-        branch: string
-        content: string
-        address: string
-        building: string
-        floor: string
-        lat: string
-        lng: string
-        snsLink: string[]
-        tags: string[]
-        contentHtml: string
-    }
-}) {
+export default function Gyms({ gymData }: { gymData: GymsData }) {
     return (
         <>
             <Layout>
@@ -90,22 +75,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 }
 
 export async function getStaticProps({ params
-}: {
-        params: {
-        id: string
-        name: string
-        branch: string
-        content: string
-        address: string
-        building: string
-        floor: string
-        lat: string
-        lng: string
-        snsLink: string[]
-        tags: string[]
-        contentHtml: string
-    }
-}) {
+}: { params: GymsData }) {
     const gymData = await getGymsData(params.id as string)
     return {
         props: {

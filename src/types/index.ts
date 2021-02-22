@@ -7,6 +7,7 @@ export type GymsData = {
   floor: string
   lat: string
   lng: string
+  content: string
   snsLink: string[]
   tags: string[]
   siteImage: string

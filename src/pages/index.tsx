@@ -3,8 +3,6 @@ import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import Card from '../components/card'
 import { getSortedGymsData } from '../lib/gyms'
-import React from 'react'
-import { Footer } from '../components/layouts/Footer'
 
 export const getStaticProps: GetStaticProps = async() => {
   const allGymsData = getSortedGymsData()
@@ -33,27 +31,24 @@ export default function Home({
   Props
 ) {
   return (
-    <>
-      <Layout home>
-        <Head>
-          <title>{siteTitle}</title>
-        </Head>
-        <section
-          className="text-center text-xl pb-5"
-        >
-          <p>
-            アクロバットを練習できる場所を見つけるサイトです。
-          </p>
-        </section>
-        <section
-          className="text-xl pt-px"
-        >
-          <Card
-            allGymsData={allGymsData}
-          />
-        </section>
-      </Layout>
-      <Footer />
-    </>
+    <Layout home>
+      <Head>
+        <title>{siteTitle}</title>
+      </Head>
+      <section
+        className="text-center text-xl pb-5"
+      >
+        <p>
+          アクロバットを練習できる場所を見つけるサイトです。
+        </p>
+      </section>
+      <section
+        className="text-xl pt-px"
+      >
+        <Card
+          allGymsData={allGymsData}
+        />
+      </section>
+    </Layout>
   )
 }
