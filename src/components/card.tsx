@@ -4,7 +4,7 @@ export default function Card({ allGymsData }: { allGymsData: any }) {
 
   return (
     <>
-      <ul className="grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-6 list-none p-0 xl:mx-10 md:mx-3 sm:mx-1">
+      <ul className="grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6 list-none p-0 xl:mx-10 md:mx-3 sm:mx-1">
         {allGymsData.map((
           {
             id,
