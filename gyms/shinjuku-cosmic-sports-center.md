@@ -16,6 +16,176 @@ tags: [
     "予約不要"
 ]
 siteImage: "https://www.regasu-shinjuku.or.jp/regasu/wp-content/uploads/2010/12/photo-cos-1budou.jpg"
+openInfo: {
+    "日曜 1": {
+        start: "09:30",
+        end: "12:00",
+        minutes: 150,
+        fee: 300,
+    },
+    "日曜 2": {
+        start: "12:20",
+        end: "15:20",
+        minutes: 180,
+        fee: 300,
+    },
+    "日曜 3": {
+        start: "15:40",
+        end: "18:40",
+        minutes: 180,
+        fee: 300,
+    },
+    "日曜 4": {
+        start: "19:00",
+        end: "22:00",
+        minutes: 180,
+        fee: 300,
+    },
+    "月曜 1": {
+        start: "09:30",
+        end: "12:00",
+        minutes: 150,
+        fee: 300,
+    },
+    "月曜 2": {
+        start: "12:20",
+        end: "15:20",
+        minutes: 180,
+        fee: 300,
+    },
+    "月曜 3": {
+        start: "15:40",
+        end: "18:40",
+        minutes: 180,
+        fee: 300,
+    },
+    "月曜 4": {
+        start: "19:00",
+        end: "22:00",
+        minutes: 180,
+        fee: 300,
+    },
+    "火曜 1": {
+        start: "09:30",
+        end: "12:00",
+        minutes: 150,
+        fee: 300,
+    },
+    "火曜 2": {
+        start: "12:20",
+        end: "15:20",
+        minutes: 180,
+        fee: 300,
+    },
+    "火曜 3": {
+        start: "15:40",
+        end: "18:40",
+        minutes: 180,
+        fee: 300,
+    },
+    "火曜 4": {
+        start: "19:00",
+        end: "22:00",
+        minutes: 180,
+        fee: 300,
+    },
+    "水曜 1": {
+        start: "09:30",
+        end: "12:00",
+        minutes: 150,
+        fee: 300,
+    },
+    "水曜 2": {
+        start: "12:20",
+        end: "15:20",
+        minutes: 180,
+        fee: 300,
+    },
+    "水曜 3": {
+        start: "15:40",
+        end: "18:40",
+        minutes: 180,
+        fee: 300,
+    },
+    "水曜 4": {
+        start: "19:00",
+        end: "22:00",
+        minutes: 180,
+        fee: 300,
+    },
+    "木曜 1": {
+        start: "09:30",
+        end: "12:00",
+        minutes: 150,
+        fee: 300,
+    },
+    "木曜 2": {
+        start: "12:20",
+        end: "15:20",
+        minutes: 180,
+        fee: 300,
+    },
+    "木曜 3": {
+        start: "15:40",
+        end: "18:40",
+        minutes: 180,
+        fee: 300,
+    },
+    "木曜 4": {
+        start: "19:00",
+        end: "22:00",
+        minutes: 180,
+        fee: 300,
+    },
+    "金曜 1": {
+        start: "09:30",
+        end: "12:00",
+        minutes: 150,
+        fee: 300,
+    },
+    "金曜 2": {
+        start: "12:20",
+        end: "15:20",
+        minutes: 180,
+        fee: 300,
+    },
+    "金曜 3": {
+        start: "15:40",
+        end: "18:40",
+        minutes: 180,
+        fee: 300,
+    },
+    "金曜 4": {
+        start: "19:00",
+        end: "22:00",
+        minutes: 180,
+        fee: 300,
+    },
+    "土曜 1": {
+        start: "09:30",
+        end: "12:00",
+        minutes: 150,
+        fee: 300,
+    },
+    "土曜 2": {
+        start: "12:20",
+        end: "15:20",
+        minutes: 180,
+        fee: 300,
+    },
+    "土曜 3": {
+        start: "15:40",
+        end: "18:40",
+        minutes: 180,
+        fee: 300,
+    },
+    "土曜 4": {
+        start: "19:00",
+        end: "22:00",
+        minutes: 180,
+        fee: 300,
+    }
+}
 ---
 
 ---

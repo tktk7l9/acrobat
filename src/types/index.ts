@@ -15,4 +15,5 @@ export type GymsData = {
   tags: string[]
   siteImage: string
   contentHtml: string
+  openInfo: object
 }

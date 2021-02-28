@@ -19,6 +19,44 @@ tags: [
   "予約制"
 ]
 siteImage: "https://pbs.twimg.com/profile_banners/1008532646320672769/1529288722"
+openInfo: {
+    "火曜 1": {
+        start: "19:30",
+        end: "21:00",
+        minutes: 90,
+        fee: 1000,
+    },
+    "火曜 2": {
+        start: "21:00",
+        end: "23:00",
+        minutes: 120,
+        fee: 1000,
+    },
+    "木曜 1": {
+        start: "19:30",
+        end: "21:00",
+        minutes: 90,
+        fee: 1000,
+    },
+    "木曜 2": {
+        start: "21:00",
+        end: "23:00",
+        minutes: 120,
+        fee: 1000,
+    },
+    "金曜 1": {
+        start: "19:30",
+        end: "21:00",
+        minutes: 90,
+        fee: 1000,
+    },
+    "金曜 2": {
+        start: "21:00",
+        end: "23:00",
+        minutes: 120,
+        fee: 1000,
+    }
+}
 ---
 
 ---

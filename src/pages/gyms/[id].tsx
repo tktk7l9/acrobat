@@ -6,6 +6,7 @@ import React from 'react'
 import { Footer } from '../../components/layouts/Footer'
 import { GymsData } from '@src/types'
 import { HomePageIcon, TwitterIcon, InstagramIcon, YouTubeIcon } from '@src/components/icons'
+import OpenInfo from '@src/components/OpenInfo'
 
 export default function Gyms({ gymData }: { gymData: GymsData }) {
     return (
@@ -72,19 +73,23 @@ export default function Gyms({ gymData }: { gymData: GymsData }) {
                         >
                             {gymData.content}
                         </div>
-                        <div>
+                        <div className="py-2">
                             {gymData.tags.map((tag, i) => (
-                                <span
-                                    className="text-xm inline-block  px-2 uppercase rounded text-white bg-green-400 uppercase last:mr-0 mr-1 mt-4"
+                            <span
+                                className="text-xm inline-block  px-2 uppercase rounded text-white bg-green-400 uppercase last:mr-0 mr-1 mt-4"
                                     key={i}
                                 >
                                 {tag}
                             </span>
-                            ))}
+                        ))}
                         </div>
                         <div
-                            dangerouslySetInnerHTML={{ __html: gymData.contentHtml }}
-                            className="text-lg my-4"
+                            className="text-lg py-2"
+                        >
+                            個人解放
+                        </div>
+                        <OpenInfo
+                            openInfo={gymData.openInfo}
                         />
                     </article>
                 </div>

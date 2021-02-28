@@ -29,6 +29,7 @@ export default function Card({ allGymsData }: { allGymsData: any }) {
           <Link
             href="/gyms/[id]"
             as={`/gyms/${id}`}
+            key={id}
           >
           <div className="rounded overflow-hidden shadow-lg my-2 hover:bg-gray-100">
               <img

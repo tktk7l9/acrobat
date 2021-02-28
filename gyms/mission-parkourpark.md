@@ -19,6 +19,56 @@ tags: [
   "予約不要"
 ]
 siteImage: "https://pbs.twimg.com/profile_banners/997700299270713346/1532765661"
+openInfo: {
+    "日曜 1": {
+        start: "12:00",
+        end: "14:00",
+        minutes: 120,
+        fee: 3000,
+    },
+    "日曜 2": {
+        start: "15:00",
+        end: "17:00",
+        minutes: 120,
+        fee: 3000,
+    },
+    "日曜 3": {
+        start: "18:00",
+        end: "20:00",
+        minutes: 120,
+        fee: 3000,
+    },
+    "月曜": {
+        start: "15:00",
+        end: "18:00",
+        minutes: 180,
+        fee: 3000,
+    },
+    "水曜": {
+        start: "15:00",
+        end: "18:00",
+        minutes: 180,
+        fee: 3000,
+    },
+    "木曜": {
+        start: "15:00",
+        end: "18:00",
+        minutes: 180,
+        fee: 3000,
+    },
+    "金曜": {
+        start: "15:00",
+        end: "18:00",
+        minutes: 180,
+        fee: 3000,
+    },
+    "土曜": {
+        start: "15:00",
+        end: "18:00",
+        minutes: 180,
+        fee: 3000,
+    }
+}
 ---
 
 ---
