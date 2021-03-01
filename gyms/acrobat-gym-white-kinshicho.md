@@ -23,20 +23,24 @@ tags: [
 siteImage: "https://pbs.twimg.com/profile_banners/769203584604868608/1611144617"
 openInfo: {
     "日曜" : {
-        start: "14:15",
-        end: "15:25",
-        minutes: 70,
-        fee: 2500,
-        membershipFee: 2000,
-        ageLimit: 18
+        1:{
+            start: "14:15",
+            end: "15:25",
+            minutes: 70,
+            fee: 2500,
+            membershipFee: 2000,
+            ageLimit: 18
+        }
     },
     "月曜" : {
-        start: "20:10",
-        end: "22:00",
-        minutes: 110,
-        fee: 2500,
-        membershipFee: 2000,
-        ageLimit: 16
+        1:{
+            start: "20:10",
+            end: "22:00",
+            minutes: 110,
+            fee: 2500,
+            membershipFee: 2000,
+            ageLimit: 16
+        }
     }
 }
 ---

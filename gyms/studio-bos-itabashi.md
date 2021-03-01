@@ -23,22 +23,28 @@ tags: [
 siteImage: "https://pbs.twimg.com/profile_banners/244014870/1447304628"
 openInfo: {
     "月曜": {
+      1:{
         start: "21:00",
         end: "23:00",
         minutes: 120,
         fee: 800,
+      }
     },
     "水曜": {
+      1:{
         start: "21:00",
         end: "23:00",
         minutes: 120,
         fee: 800,
+      }
     },
     "金曜": {
+      1:{
         start: "21:00",
         end: "23:00",
         minutes: 120,
         fee: 800,
+      }
     }
 }
 ---
