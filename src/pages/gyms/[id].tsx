@@ -84,9 +84,13 @@ export default function Gyms({ gymData }: { gymData: GymsData }) {
                         ))}
                         </div>
                         <div
-                            className="text-lg py-2"
+                            className="text-lg py-2 inline-block"
                         >
                             個人解放
+                        </div>
+                        <div
+                            className="text-gray-500 inline-block px-6 text-xs sm:text-base">
+                            実際とは異なる場合があります。公式HPをご確認ください。
                         </div>
                         <OpenInfo
                             openInfo={gymData.openInfo}
